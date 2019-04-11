@@ -1,6 +1,8 @@
 FROM alpine
 
-LABEL maintainer="yyxjcc <yyxjcc@gmail.com>" 
+# Based on lwieske's work
+LABEL Maintainer="Lothar Wieske <lothar.wieske@gmail.com>"
+LABEL Maintainer="yyxjcc <yyxjcc@gmail.com>" 
 
 RUN cd /tmp                                                              && \
     apk add --no-cache --virtual=build-dependencies ca-certificates wget && \
